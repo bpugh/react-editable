@@ -51,7 +51,7 @@ const EditableText = React.createClass({
         onChange={this.handleChange}
         onBlur={this.cancelEdit}
         value={this.state.newValue}
-        className="form-control average" />
+        className="form-control inline-editable" />
       </form>
     );
     return inputForm;
@@ -62,7 +62,7 @@ const EditableText = React.createClass({
         <div className="inline-edit">
           {this.state.editing
             ? this.renderInputForm()
-            : <a onClick={this.edit} title="Edit" className={'average'}>{this.props.value || 'Add'}</a>
+            : <a onClick={this.edit} title="Edit" className={'inline-editable'}>{this.props.value || 'Add'}</a>
           }
         </div>
       );
