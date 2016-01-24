@@ -14,7 +14,7 @@ let Demo = React.createClass({
   },
   render() {
     return <div>
-      <h1>react-editable Demo</h1>
+      <h1>react-inline-editable Demo</h1>
       <Component onSubmit={this.handleSubmit} value={this.state.value}/>
     </div>
   }

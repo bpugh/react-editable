@@ -1,7 +1,7 @@
 {
-  "name": "react-editable",
-  "version": "1.0.0",
-  "description": "react-editable React component",
+  "name": "react-inline-editable",
+  "version": "0.0.1",
+  "description": "react-inline-editable React component",
   "main": "lib/index.js",
   "jsnext:main": "es6/index.js",
   "files": [
