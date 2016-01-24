@@ -13,7 +13,7 @@
   "scripts": {
     "build": "nwb build",
     "clean": "nwb clean",
-    "start": "nwb serve",
+    "start": "nwb serve --port 3004",
     "test": "nwb test"
   },
   "dependencies": {

@@ -4,10 +4,18 @@ import {render} from 'react-dom'
 import Component from '../../src'
 
 let Demo = React.createClass({
+  getInitialState: function() {
+    return {
+      value: 'Hello world!'
+    };
+  },
+  handleSubmit(val) {
+    this.setState({value: val})
+  },
   render() {
     return <div>
       <h1>react-editable Demo</h1>
-      <Component/>
+      <Component onSubmit={this.handleSubmit} value={this.state.value}/>
     </div>
   }
 })
